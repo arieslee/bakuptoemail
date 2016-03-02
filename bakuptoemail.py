@@ -12,10 +12,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 try:
-	opts, args = getopt.getopt(sys.argv[1:], 'h:s:t:u:p:f:')
+    opts, args = getopt.getopt(sys.argv[1:], 'h:s:t:u:p:f:')
 except getopt.GetoptError, err:
-	print str(err)
-	exit()
+    print str(err)
+    exit()
 
 SMTP_HOST = SMTP_SENDER = SMTP_TO = SMTP_USER = SMTP_PWD = ''
 FILENAME = ''
