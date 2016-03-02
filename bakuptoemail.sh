@@ -34,7 +34,7 @@ mkdir -p $BAKUP_DIR
 echo "start dump mysql"
 for db_name in $MYSQL_DBS
 do
-	mysqldump -u $MYSQL_USER -h $MYSQL_SERVER -p$MYSQL_PASS $db_name > "$BAKUP_DIR/$BAKUP_NAME-$db_name.sql"
+    mysqldump -u $MYSQL_USER -h $MYSQL_SERVER -p$MYSQL_PASS $db_name > "$BAKUP_DIR/$BAKUP_NAME-$db_name.sql"
 done
 echo "dump ok"
 #

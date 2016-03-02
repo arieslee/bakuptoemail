@@ -33,7 +33,6 @@ for k,v in opts:
         SMTP_PWD = v
     elif k=='-f':
         FILENAME = v
-    #print "k: %s ,v : %s" % (k,v)
 def send_email():
     #创建一个带附件的实例
     msg = MIMEMultipart()
